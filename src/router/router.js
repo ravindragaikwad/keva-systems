@@ -27,26 +27,6 @@ const router = new Router({
                     name: 'IT Infrastructure',
                     component: () => import('../components/Verticals/ITInfrastructure.vue'),
                 },
-                // {
-                //     path: '/Verticals/WebDesignSupport',
-                //     name: 'Web Design Support',
-                //     component: () => import('../components/Verticals/WebDesignSupport.vue'),
-                // },
-                // {
-                //     path: '/Verticals/ConsultingServices',
-                //     name: 'Consulting Services',
-                //     component: () => import('../components/Verticals/ConsultingServices.vue'),
-                // },
-                // {
-                //     path: '/Verticals/PayrollHR',
-                //     name: 'Payroll HR',
-                //     component: () => import('../components/Verticals/PayrollHR.vue'),
-                // },
-                // {
-                //     path: '/Verticals/StaffingServices',
-                //     name: 'Staffing Services',
-                //     component: () => import('../components/Verticals/StaffingServices.vue'),
-                // },
               ]
         },
         {
@@ -54,7 +34,11 @@ const router = new Router({
             name: 'TechnologiesOffered',
             component: () => import('../components/TechnologiesOffered.vue'),
         },
-      
+        {
+            path: '/CareerOpportunities',
+            name: 'Careers',
+            component: () => import('../components/CareerOpportunities.vue'),
+        },
     ]
 });
 

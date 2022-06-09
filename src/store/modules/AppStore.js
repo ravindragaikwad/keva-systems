@@ -21,6 +21,12 @@ const state = {
                 text: 'Technologies',
                 value: '/TechnologiesOffered'
             }
+        },
+        {
+            'routerlink': {
+                text: 'Careers',
+                value: '/CareerOpportunities'
+            }
         }
     ]
 }

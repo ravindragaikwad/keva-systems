@@ -3,7 +3,7 @@
         <v-parallax jumbotran dark src="../assets/technologies.png">
             <v-row align="center" justify="center">
                 <v-col class="text-center" cols="12">
-                    <h1 class="text-h2 font-weight-bold mb-4">
+                    <h1 class="text-h2 font-weight-bold">
                         Technologies
                     </h1>
                     <v-chip class="ma-2" color="primary">
@@ -87,3 +87,18 @@ export default {
     }
 };
 </script>
+<style>
+h4 {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+}
+
+strong {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+}
+
+p {
+    text-align: justify;
+}
+</style>

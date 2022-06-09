@@ -126,3 +126,20 @@ export default {
   //components: { HomePage }
 }
 </script>
+<style>
+h4 {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+}
+h2 {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+}
+strong {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+}
+p {
+    text-align: justify;
+}
+</style>
