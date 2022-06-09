@@ -27,6 +27,12 @@ const state = {
                 text: 'Careers',
                 value: '/CareerOpportunities'
             }
+        },
+        {
+            'routerlink': {
+                text: 'Contact Us',
+                value: '/ContactUs'
+            }
         }
     ]
 }

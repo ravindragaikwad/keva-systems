@@ -1,11 +1,11 @@
 <template>
     <v-container>
-    <!-- <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"> -->
-    <v-parallax dark src="../assets/keva-systems-background.png">
-        <v-row align="center" justify="center">
-            <v-col class="text-center" cols="12">
-                <h1>Keva Systems</h1>
-                <h4 class="subheading">
+        <!-- <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"> -->
+        <v-container>
+            <v-row align="center" justify="center">
+                <v-col class="text-center" cols="12">
+                    <!-- <h1>Keva Systems</h1> -->
+                    <!-- <h4 class="subheading">
                     <p>
                         Keva Systems LLC. is a pioneer in the IT Staff Augmentation industry, with over 20 years of
                         Industry experience servicing over 50+ customers. We bridge the IT talent demand-supply gap
@@ -13,18 +13,64 @@
                         service focus resulting in over 75% of our clients ranking us in their top 3 suppliers by
                         performance.
                     </p>
-                </h4>
-            </v-col>
-        </v-row>
-    </v-parallax>
+                </h4> -->
+                    <div class="header">
+                        <!--Content before waves-->
+                        <div class="inner-header flex">
+                            <!--Just the logo.. Don't mind this-->
+                            <!-- <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 500 500" xml:space="preserve">
+                                <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10"
+                                    d="M57,283" />
+                                <g>
+                                    <path fill="#fff"
+                                        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7    c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2  c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+                                </g>
+                            </svg> -->
+                            <h1 class="text-h2 font-weight-bold mb-4">
+                                Keva Systems
+                            </h1>
+                        </div>
+                        <div>
+                             <h5 class="text-h5 font-weight-bold mb-5" style="color:white">
+                                Identifying Possibilities Through Employee Empowerment!
+                                </h5>
+                        </div>
+
+                        <!--Waves Container-->
+                        <div>
+                            <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave"
+                                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                </defs>
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                </g>
+                            </svg>
+                        </div>
+                        <!--Waves end-->
+                    </div>
+                    <!--Header ends-->
+                </v-col>
+            </v-row>
+        </v-container>
         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item v-for="(item, i) in timelineData" :key="i" :color="item.color" :icon="item.icon" fill-dot>
                 <v-card :color="item.color" dark>
                     <v-card-title class="text-h6">
-                        {{item.header}}
+                        {{ item.header }}
                     </v-card-title>
                     <v-card-text class="white text--primary">
-                        <p>{{item.content}}</p>
+                        <p>{{ item.content }}</p>
                     </v-card-text>
                 </v-card>
             </v-timeline-item>
@@ -35,31 +81,37 @@
 <script>
 export default {
     data: () => ({
-        timelineData:[
+        timelineData: [
             {
-                 color: 'blue lighten-2',
+                color: 'blue lighten-2',
                 icon: 'mdi-star',
-               header: 'IT STAFFING SERVICE',
-                content: 'Whatever your need - be it a single resource or a team of resources – thanks to our extensive database of candidates, we will find you the right talent in a timely and cost-effective manner. Our staff augmentation team has expert knowledge in the tech industry and in your local job market to help you find the right IT professionals, whether you need them for 3-6 months, or for the long term. With the flexibility to help organizations scale up or down depending on their workflow, we enable you to maximize your resources and leverage opportunities.'
+                header: 'Application Development',
+                content: 'In today’s demanding business environment which prioritizes flexibility, speed, and efficiency, a robust IT strategy is critical. We help you achieve these qualities in your IT strategy by providing you system integration, testing, application development and management services and solutions.'
             },
             {
-                 color: 'blue lighten-2',
+                color: 'blue lighten-2',
                 icon: 'mdi-book-variant',
-                header: 'Optimize Your Hiring Process',
-                content: 'At Keva Systems, we help you avoid the process of writing and posting job openings, sifting through resumes and laboring through the lengthy interview process. Our IT and engineering staff augmentation services allow you to sidestep those consuming tasks and place top tech professionals in the positions you need to fill – saving you time and money, while putting you in the best position to take on new business opportunities. We only submit qualified candidates who match the skill sets you require. We conduct a thorough pre-screening process and provide training materials for all candidates so they come to you with experience and knowledge, which helps decrease your business training costs.'
+                header: 'IT Infrastructure',
+                content: 'Keva Systems LLC, collaborates with its customers to implement smarter IT infrastructure management strategies. Our expertise in remote infrastructure management and operations can reduce overhead costs by over 60%. We offer flexible and SLA driven engagement models. Our rigid compliance to standards, such as ITIL / ITSM / ISO allows us to deliver reliable, stable and measurable SLA based services. As part of our Infrastructure Services, Keva Systems helps optimize the performance of your applications, manage end-to-end implementations and provide customized services to help customers build, manage, and optimize their IT infrastructure. Keva Systems ensures the quality of the processes and the deliverables of the projects, delivering superior services to clients worldwide.'
             },
             {
-                  color: 'blue lighten-2',
+                color: 'blue lighten-2',
                 icon: 'mdi-airballoon',
-                header: 'Benefit From Our Local Expertise',
-                content: 'As a leading provider of Information Technology staffing augmentation, we provide you with customized solutions, meeting with you to understand the specific skills you need and your overall business goals. The benefits to this approach include: •	Shorter hiring timelines •	Reduced cost of attaining talent •	Increased knowledge of business and industry trends and practices'
+                header: 'WEB DESIGNING & SUPPORT',
+                content: 'Keva Systems LLC, provide an excellent solution for web design & development. These days web design and development is very expensive but at Keva Systems we provide these services at very affordable rates. Our clients range from small to large organizations, companies, and individuals. Our web designs are creative, beautiful, eye catching and have maximum impact on viewers. We provide industry specific design to maximize visibility for targeted users. Our web designs are matches with latest web technologies which brings us browsers compatibility for all major browsers. So user will reach quality website and will not find any difficulties to contact your business.'
             },
             {
-                 color: 'blue lighten-2',
-                icon: 'mdi-buffer',
-                header:'We Cover Every IT and Engineering Specialty Area',
-                content: 'We connect qualified professionals to opportunities at small, medium and large companies in virtually every industry. Our candidates possess a multitude of skill sets, including:	Software & Web Development/Engineering'
-            }
+                color: 'blue lighten-2',
+                icon: 'mdi-book-variant',
+                header: 'CONSULTING SERVICES',
+                content: 'Keva Systems LLC, with its service offerings developed over years of industry experience is uniquely positioned to provide scalable IT Consulting/Staffing Solutions tuned specifically to meet customer’s resources needs. At Keva Systems, we provide IT consultants on contract, contract-to-hire or permanent basis to our customers’ immediate and long-term resource needs.'
+            },
+            {
+                color: 'blue lighten-2',
+                icon: 'mdi-airballoon',
+                header: 'Payroll & HR',
+                content: 'Keva Systems LLC, provides Payroll, HR, and Benefits for Today’s Workplace. We partner with ADP and provides below services with a cost effective support to your business.'
+            },
         ]
     }),
 }
@@ -77,5 +129,110 @@ strong {
 
 p {
     text-align: justify;
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
 </style>

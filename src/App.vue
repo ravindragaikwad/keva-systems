@@ -9,24 +9,11 @@
           <a href="/" class="white--text" style="text-decoration: none; font-size:3vh">Keva Systems</a>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <!-- <v-btn v-for="link in links" :key="link" text>
-          <router-link to="/PayrollHR">test</router-link>
-        </v-btn>
-        <v-spacer></v-spacer> -->
         <div v-for="routerlink in routerlinks" v-bind:key="routerlink.routerlink.value" class="d-none d-sm-flex">
           <v-btn small v-bind:key="routerlink.routerlink.value" :to="routerlink.routerlink.value" color="gray" text>
             {{ routerlink.routerlink.text }}
           </v-btn>
         </div>
-        <!-- <v-responsive max-width="260">
-          <v-text-field
-            dense
-            flat
-            hide-details
-            rounded
-            solo-inverted
-          ></v-text-field>
-        </v-responsive> -->
       </v-container>
     </v-app-bar>
 
@@ -47,13 +34,6 @@
     <v-main class="grey lighten-3">
       <v-container>
         <router-view />
-        <!-- <v-row>
-          <v-col>
-            <v-sheet min-height="70vh" rounded="lg">
-              <HomePage></HomePage>
-            </v-sheet>
-          </v-col>
-        </v-row> -->
       </v-container>
     </v-main>
     <v-footer v-bind="localAttrs">
@@ -81,15 +61,12 @@
 
 <script>
 import { mapState } from 'vuex';
-//import HomePage from './components/HomePage.vue'
 export default {
   data: () => ({
     drawer: false,
     links: [
       "Payroll & HR",
       "Application Development",
-      // 'IT Infrastructure',
-      // 'Consulting Services',
       "Technlogies",
       "Careers",
       "Contact Us"
@@ -123,7 +100,6 @@ export default {
       routerlinks: state => state.AppStore.routerlinks
     })
   },
-  //components: { HomePage }
 }
 </script>
 <style>

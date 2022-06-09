@@ -39,6 +39,11 @@ const router = new Router({
             name: 'Careers',
             component: () => import('../components/CareerOpportunities.vue'),
         },
+        {
+            path: '/ContactUs',
+            name: 'ContactUs',
+            component: () => import('../components/ContactUs.vue'),
+        },
     ]
 });
 
