@@ -5,6 +5,9 @@
       <v-app-bar-nav-icon @click="drawer = true" class="d-flex d-sm-none"></v-app-bar-nav-icon>
       <v-container class="py-0 fill-height">
         <!-- <v-avatar class="mr-10" color="grey darken-1" size="32"></v-avatar> -->
+        <!-- <a href="/">
+          <img src="./assets/logo.png" style="height:3.6vh" vertical-align:middle alt="Keva Systems" link>
+        </a> -->
         <v-toolbar-title>
           <a href="/" class="white--text" style="text-decoration: none; font-size:3vh">Keva Systems</a>
         </v-toolbar-title>
