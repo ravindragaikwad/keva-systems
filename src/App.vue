@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar app color="gray light-3" flat :collapse="!collapseOnScroll" :collapse-on-scroll="collapseOnScroll"
+    <v-app-bar app color="gray" flat :collapse="!collapseOnScroll" :collapse-on-scroll="collapseOnScroll"
       absolute dark dense scroll-target="#scrolling-techniques-6">
       <v-app-bar-nav-icon @click="drawer = true" class="d-flex d-sm-none"></v-app-bar-nav-icon>
       <v-container class="py-0 fill-height">
@@ -9,6 +9,9 @@
           <img src="./assets/logo.png" style="height:3.6vh" vertical-align:middle alt="Keva Systems" link>
         </a> -->
         <v-toolbar-title>
+          <v-app-bar-nav-icon>
+          <v-img  max-height="50" max-width="50" src="./assets/logo.svg"></v-img>
+          </v-app-bar-nav-icon>
           <a href="/" class="white--text" style="text-decoration: none; font-size:3vh">Keva Systems</a>
         </v-toolbar-title>
         <v-spacer></v-spacer>
